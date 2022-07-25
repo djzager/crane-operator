@@ -1,7 +1,7 @@
 FROM quay.io/konveyor/crane-reverse-proxy:latest as crane-reverse-proxy
 FROM quay.io/konveyor/crane-secret-service:latest as crane-secret-service
 FROM quay.io/konveyor/crane-ui-plugin:latest as crane-ui-plugin
-FROM quay.io/konveyor/crane-runner:latest as crane-runner
+FROM quay.io/djzager/crane-runner:add-debug as crane-runner
 
 # Build the manager binary
 FROM quay.io/konveyor/builder as builder
